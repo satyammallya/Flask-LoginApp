@@ -15,7 +15,7 @@ try:
     print("You successfully connected to MongoDB!")
 except Exception as e:
     print(e)
-    
+# hello word
 @app.route('/')
 def home_page():
     print("Home page")
