@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout Confirmation</title>
+    <script>
+        function confirmLogout() {
+            if (confirm("Are you sure you want to logout?")) {
+        
+                window.location.href = "{{ url_for('perform_logout') }}";
+            } else {
+                pass;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Logout Confirmation</h1>
+    <button onclick="confirmLogout()">Logout</button>
+   
+</body>
+</html>

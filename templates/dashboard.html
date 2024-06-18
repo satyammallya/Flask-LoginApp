@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    
+</head>
+<body>
+   
+        <h1>DASHBOARD:</h1>
+        <br>
+        <p>Welcome to the dashboard, {{ username }}</p>
+       
+        
+    
+    <div class="dashboard-container">
+        <table>
+        {% for key,value in data.items() %}
+        <tr>
+            <th>{{key}}</th>
+            <th>{{value}}</th>
+        </tr>
+        {% endfor %}
+            
+        </table>
+        
+    </div>
+    <button class="logout-button" onclick="confirm_Logout()">Logout</button>
+    <br>
+
+    <script>
+        function confirm_Logout() {
+            if (confirm("Are you sure you want to logout?")) {
+                window.location.href = '/logout';
+            } else {
+                pass;
+            }
+        }
+    </script>
+</body>
+</html>
