@@ -21,7 +21,6 @@ This repository contains a Flask-based web application for managing employee inf
 - **Python**: The programming language used for backend logic.
 - **HTML/CSS**: For creating the frontend of the application.
 
-- note sh is terminal
 
 ## Setup Instructions
 
